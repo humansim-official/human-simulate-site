@@ -23,7 +23,7 @@
   <link rel="apple-touch-icon" href="../assets/images/favicon.png">
   <link rel="alternate" hreflang="ja" href="../index.html">
   <link rel="alternate" hreflang="en" href="index.html">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css?v=20261108-2">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9LKPD24TH"></script>
   <script>
@@ -33,7 +33,7 @@
 
     gtag('config', 'G-D9LKPD24TH');
   </script>
-  <script src="../script.js" defer></script>
+  <script src="../script.js?v=20261108-2" defer></script>
 </head>
 <body class="page-home">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -78,7 +78,10 @@
 
   <main id="main-content">
     <section class="showcase" aria-label="Featured games" data-showcase>
-      <div class="showcase__atmosphere" aria-hidden="true"></div>
+      <div class="showcase__atmosphere" aria-hidden="true">
+        <div class="showcase__color-image is-current" data-atmosphere></div>
+        <div class="showcase__color-image" data-atmosphere></div>
+      </div>
       <div class="section__shell">
         <div class="showcase__intro">
           <h1>HUMAN SIMULATE <span>Official website</span></h1>
@@ -154,7 +157,14 @@
             <span><small>Series 01</small>My Cute Egg Diary</span>
           </button>
         </div>
-        <p class="showcase__position" aria-live="polite" aria-atomic="true"><span data-slide-number>01</span> / 04 <span class="showcase__position-line" aria-hidden="true"></span> Our stories</p>
+        <div class="showcase__toolbar">
+          <p class="showcase__position" aria-live="polite" aria-atomic="true"><span data-slide-number>01</span> / 04 <span class="showcase__position-line" aria-hidden="true"></span> Our stories</p>
+          <div class="showcase__controls" data-slide-controls hidden>
+            <button class="showcase__arrow" type="button" data-slide-step="-1" aria-label="Previous game"><span aria-hidden="true">←</span></button>
+            <button class="showcase__autoplay" type="button" data-autoplay aria-pressed="false" aria-label="Automatic game slideshow"><span class="showcase__play-icon" aria-hidden="true"></span>Auto play</button>
+            <button class="showcase__arrow" type="button" data-slide-step="1" aria-label="Next game"><span aria-hidden="true">→</span></button>
+          </div>
+        </div>
       </div>
     </section>
 
