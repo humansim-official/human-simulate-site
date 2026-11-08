@@ -4,19 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HUMAN SIMULATE | Indie Circle for Romance Adventure Games</title>
-  <meta name="description" content="The official site of HUMAN SIMULATE, an indie game circle focused on romance adventure games, links, circle information, and streaming guidelines.">
-  <meta name="theme-color" content="#fff8f4">
+  <meta name="description" content="The official HUMAN SIMULATE website. Discover our upcoming game Tonari no OL-san, the Egg Girl series, store links, and streaming guidelines.">
+  <meta name="theme-color" content="#f4f8fa">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="HUMAN SIMULATE">
   <meta property="og:title" content="HUMAN SIMULATE | Indie Circle for Romance Adventure Games">
   <meta property="og:description" content="An indie game circle focused on romance adventure games that carefully portray time spent with characters.">
-  <meta property="og:image" content="../assets/images/banner-egg-girls-story.png">
-  <meta property="og:image:alt" content="Main banner for My Egg Girls: A Gentle Story">
+  <meta property="og:url" content="https://humansim-official.github.io/human-simulate-site/en/">
+  <meta property="og:image" content="https://humansim-official.github.io/human-simulate-site/assets/images/ol-main.webp">
+  <meta property="og:image:alt" content="Main visual for Tonari no OL-san">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HUMAN SIMULATE | Indie Circle for Romance Adventure Games">
   <meta name="twitter:description" content="We create story-driven games that value kindness, bittersweet emotions, and subtle changes in relationships.">
-  <meta name="twitter:image" content="../assets/images/banner-egg-girls-story.png">
+  <meta name="twitter:image" content="https://humansim-official.github.io/human-simulate-site/assets/images/ol-main.webp">
+  <link rel="canonical" href="https://humansim-official.github.io/human-simulate-site/en/">
   <link rel="icon" type="image/png" href="../assets/images/favicon.png">
   <link rel="apple-touch-icon" href="../assets/images/favicon.png">
   <link rel="alternate" hreflang="ja" href="../index.html">
@@ -63,6 +65,7 @@
         </button>
 
         <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation" data-nav>
+          <a class="site-nav__link" href="#news">News</a>
           <a class="site-nav__link" href="#works">Works</a>
           <a class="site-nav__link" href="#about">About</a>
           <a class="site-nav__link" href="#links">Links</a>
@@ -74,31 +77,101 @@
   </header>
 
   <main id="main-content">
-    <section class="hero section">
+    <section class="showcase" aria-label="Featured games" data-showcase>
+      <div class="showcase__atmosphere" aria-hidden="true"></div>
       <div class="section__shell">
-        <div class="hero__panel">
-          <div class="hero__content">
-            <p class="eyebrow">Official Site</p>
-            <h1 class="hero__title">HUMAN SIMULATE</h1>
-            <p class="hero__copy">An indie game circle focused on romance adventure games that carefully portray time spent with characters.</p>
-            <p class="hero__lead">We create story-driven games that value kindness, bittersweet emotions, and the subtle changes in distance between people.</p>
+        <div class="showcase__intro">
+          <h1>HUMAN SIMULATE <span>Official website</span></h1>
+          <p>Stories of everyday warmth, and hearts growing closer.</p>
+        </div>
 
-            <div class="hero__actions">
-              <a class="button button--primary" href="#works">View Works</a>
-              <a class="button button--secondary" href="#links">View Links</a>
+        <div class="showcase__stage">
+          <article class="showcase__slide" id="feature-ol" data-slide aria-labelledby="feature-title-ol">
+            <a class="showcase__visual" href="#work-ol" tabindex="0">
+              <img src="../assets/images/ol-main.webp" alt="Key visual: Tonari no OL-san" width="1920" height="1080" fetchpriority="high">
+            </a>
+            <div class="showcase__caption">
+              <div>
+                <p class="eyebrow">New title · Store page under review</p>
+                <h2 id="feature-title-ol">Tonari no OL-san</h2>
+              </div>
+              <a class="button button--primary" href="#work-ol" tabindex="0">Discover the game<span aria-hidden="true">→</span></a>
             </div>
-          </div>
+          </article>
+          <article class="showcase__slide" id="feature-touka" data-slide hidden aria-labelledby="feature-title-touka">
+            <a class="showcase__visual" href="#work-touka" tabindex="-1">
+              <img src="../assets/images/feature-touka.webp" alt="Key visual: Together with an Egg Girl! Touka's Raising Diary" width="1280" height="720" loading="lazy">
+            </a>
+            <div class="showcase__caption">
+              <div>
+                <p class="eyebrow">Third entry in the series</p>
+                <h2 id="feature-title-touka">Together with an Egg Girl! Touka's Raising Diary</h2>
+              </div>
+              <a class="button button--primary" href="#work-touka" tabindex="-1">Discover the game<span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="showcase__slide" id="feature-story" data-slide hidden aria-labelledby="feature-title-story">
+            <a class="showcase__visual" href="#work-story" tabindex="-1">
+              <img src="../assets/images/feature-story.webp" alt="Key visual: My Egg Girls: A Gentle Story" width="1600" height="517" loading="lazy">
+            </a>
+            <div class="showcase__caption">
+              <div>
+                <p class="eyebrow">Second entry in the series</p>
+                <h2 id="feature-title-story">My Egg Girls: A Gentle Story</h2>
+              </div>
+              <a class="button button--primary" href="#work-story" tabindex="-1">Discover the game<span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          <article class="showcase__slide" id="feature-diary" data-slide hidden aria-labelledby="feature-title-diary">
+            <a class="showcase__visual" href="#work-diary" tabindex="-1">
+              <img src="../assets/images/feature-diary.webp" alt="Key visual: My Cute Egg Diary" width="1600" height="517" loading="lazy">
+            </a>
+            <div class="showcase__caption">
+              <div>
+                <p class="eyebrow">First entry in the series</p>
+                <h2 id="feature-title-diary">My Cute Egg Diary</h2>
+              </div>
+              <a class="button button--primary" href="#work-diary" tabindex="-1">Discover the game<span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
 
-          <div class="hero__media">
-            <figure class="media-frame media-frame--hero">
-              <img
-                src="../assets/images/banner-egg-girls-story.png"
-                alt="Main banner for My Egg Girls: A Gentle Story"
-                width="3840"
-                height="1240"
-              >
-            </figure>
-          </div>
+        <div class="showcase__selectors" aria-label="Choose a featured game" hidden>
+          <button class="showcase__selector" type="button" data-slide-select="0" aria-pressed="true" aria-controls="feature-ol">
+            <img src="../assets/images/ol-thumb.webp" alt="" width="320" height="180" loading="lazy">
+            <span><small>New project</small>Tonari no OL-san</span>
+          </button>
+          <button class="showcase__selector" type="button" data-slide-select="1" aria-pressed="false" aria-controls="feature-touka">
+            <img src="../assets/images/feature-touka.webp" alt="" width="320" height="180" loading="lazy">
+            <span><small>Series 03</small>Together with an Egg Girl! Touka's Raising Diary</span>
+          </button>
+          <button class="showcase__selector" type="button" data-slide-select="2" aria-pressed="false" aria-controls="feature-story">
+            <img src="../assets/images/feature-story.webp" alt="" width="320" height="180" loading="lazy">
+            <span><small>Series 02</small>My Egg Girls: A Gentle Story</span>
+          </button>
+          <button class="showcase__selector" type="button" data-slide-select="3" aria-pressed="false" aria-controls="feature-diary">
+            <img src="../assets/images/feature-diary.webp" alt="" width="320" height="180" loading="lazy">
+            <span><small>Series 01</small>My Cute Egg Diary</span>
+          </button>
+        </div>
+        <p class="showcase__position" aria-live="polite" aria-atomic="true"><span data-slide-number>01</span> / 04 <span class="showcase__position-line" aria-hidden="true"></span> Our stories</p>
+      </div>
+    </section>
+
+    <section class="news section" id="news" aria-labelledby="news-heading">
+      <div class="section__shell news__layout">
+        <div class="section__head">
+          <p class="eyebrow">From the circle</p>
+          <h2 class="section__title" id="news-heading">News</h2>
+        </div>
+        <div class="news__list">
+          <a class="news__item" href="#work-ol">
+            <time datetime="2026-11-08">2026.11.08</time>
+            <span class="news__tag">New title</span>
+            <span>Introducing Tonari no OL-san. The store page is currently under review.</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a class="news__community" href="https://ci-en.dlsite.com/creator/24900" target="_blank" rel="noopener noreferrer">More updates on Ci-en <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -108,11 +181,50 @@
         <div class="section__head">
           <p class="eyebrow">Works</p>
           <h2 class="section__title">Works</h2>
-          <p class="section__lead">Our latest release is featured first, with direct links to each platform and supporting visuals for each title.</p>
+          <p class="section__lead">Discover our upcoming game and the stories we have released so far.</p>
         </div>
 
         <div class="works-grid">
-          <article class="work-card card">
+          <article class="work-card card work-card--upcoming" id="work-ol">
+            <div class="work-card__gallery">
+              <figure class="media-frame media-frame--wide">
+                <img src="../assets/images/ol-main.webp" alt="Main visual for Tonari no OL-san" width="1920" height="1080" loading="lazy">
+              </figure>
+              <div class="work-card__thumbs">
+                <figure class="media-thumb">
+                  <div class="media-frame media-frame--thumb">
+                    <img src="../assets/images/ol-daily.webp" alt="A daily-life gameplay scene from Tonari no OL-san" width="885" height="500" loading="lazy">
+                  </div>
+                  <figcaption class="media-thumb__label">Everyday life</figcaption>
+                </figure>
+                <figure class="media-thumb">
+                  <div class="media-frame media-frame--thumb">
+                    <img src="../assets/images/ol-talk.webp" alt="A conversation scene from Tonari no OL-san" width="900" height="500" loading="lazy">
+                  </div>
+                  <figcaption class="media-thumb__label">Conversations</figcaption>
+                </figure>
+              </div>
+              <p class="work-card__image-note">Images from the game.</p>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__intro">
+                <p class="eyebrow">New project</p>
+                <h3 class="work-card__title">
+                  <span class="work-card__title-main">Tonari no OL-san</span>
+                  <span class="work-card__title-sub">隣のOLさん · A heartfelt live-together romance simulation</span>
+                </h3>
+                <p class="work-card__text">Grow closer to Ayane, the office worker next door, in a heartfelt romance simulation about living together. As you share everyday conversations and make choices, her expressions and reactions gradually change. Listen to her voice and enjoy the little moments that bring the two of you closer.</p>
+              </div>
+              <!-- Add the real store links here when their pages are published. -->
+              <div class="release-notice">
+                <span class="release-notice__status">Store page under review</span>
+                <p>Sales and preview pages are not available yet. Links will be added here once they are published.</p>
+                <a class="text-link" href="https://ci-en.dlsite.com/creator/24900" target="_blank" rel="noopener noreferrer">Follow updates on Ci-en <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card card" id="work-touka">
             <div class="work-card__gallery">
               <figure class="media-frame media-frame--wide">
                 <img
@@ -175,7 +287,7 @@
             </div>
           </article>
 
-          <article class="work-card card">
+          <article class="work-card card" id="work-story">
             <div class="work-card__gallery">
               <figure class="media-frame media-frame--wide">
                 <img
@@ -248,7 +360,7 @@
             </div>
           </article>
 
-          <article class="work-card card">
+          <article class="work-card card" id="work-diary">
             <div class="work-card__gallery">
               <figure class="media-frame media-frame--wide">
                 <img
